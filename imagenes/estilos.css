@@ -1,0 +1,62 @@
+body {
+    background-color: papayawhip;
+    align-items: center;
+}
+
+
+/*
+COMENTARIOS GENERALES:
+
+- Hace falta pensar una versión responsive en la que el titulo no tenga espacios en blanco
++ solucionado problema del titulo poniendo un padding en cajaLogoTitulo
+*/
+
+.Titulopagina {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    /*Colores pendientes de cambiar*/
+    justify-content: right;
+    align-items: center;
+    box-sizing: border-box;
+    height: fit-content;
+    border: 3px solid black;
+    margin-bottom: 5%;
+}
+
+.itemTitulo {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 40%;
+    font-size: 215%;
+    padding: 3%;
+}
+
+.logoTitulo {
+    margin: auto;
+    width: 70%;
+    height: 40%;
+}
+
+.cajaLogoTitulo {
+    display: flex;
+    align-items: center;
+    background-color: cadetblue;
+    width: 50%;
+    padding: 4%;
+    height: 30%;
+}
+
+.contenedorPrincipal {
+    display: block;
+    border-radius: 1%;
+    border-style: dotted;
+    border-size: 2px;
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+    background-color: blue;
+    font-size: larger;
+    text-align: left;
+}
