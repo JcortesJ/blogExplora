@@ -196,7 +196,7 @@ a:hover {
     background-color: #103955;
     /*Ejecutamos la animacion por 1s*/
     animation: moverseLateral;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     /*Le añade un efecto de sombra a la caja*/
     box-shadow: 0.5px 0.5px 1px 1px black;
 }
