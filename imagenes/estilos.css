@@ -1,6 +1,14 @@
+/*  cayena
+       background-image: url("https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/GuayanaFrancesa_Cayenne_500px_113052179_Ronan%20LIETAR_500px.JPG?itok=fbjhdqsu"); */
+
+
+/*
+    madagascar
+        background-image: url("https://viajes.nationalgeographic.com.es/medio/2021/07/29/baobabs_dc88eef4_1254x836.jpg");
+    */
+
 body {
     background-color: papayawhip;
-    align-items: center;
 }
 
 
@@ -9,6 +17,7 @@ COMENTARIOS GENERALES:
 
 - Hace falta pensar una versión responsive en la que el titulo no tenga espacios en blanco
 + solucionado problema del titulo poniendo un padding en cajaLogoTitulo
+- hace falta arreglar las transiciones
 */
 
 .Titulopagina {
@@ -59,4 +68,70 @@ COMENTARIOS GENERALES:
     background-color: blue;
     font-size: larger;
     text-align: left;
+}
+
+.menuNav {
+    margin: auto;
+    padding-top: 10%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(233, 230, 230, 0.877);
+    flex-direction: column;
+    border: solid gray 2px;
+    margin-bottom: 3%;
+}
+
+.botonesNav {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flechaIzq {
+    width: 20%;
+    margin-right: 5%;
+    height: 20%;
+    transform: rotate(90deg);
+}
+
+#flechaDe {
+    width: 20%;
+    height: 20%;
+    /*margin-left: 5%;*/
+    transform: rotate(-90deg);
+}
+
+#flechaIzq:hover {
+    width: 22%;
+    height: 22%;
+    background-color: rgb(231, 231, 97);
+    border-radius: 10%;
+}
+
+#flechaDe:hover {
+    width: 22%;
+    height: 22%;
+    background-color: rgb(231, 231, 97);
+    border-radius: 10%;
+}
+
+#ciudad {
+    font-size: 40px;
+}
+
+#imagenFondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 65%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-image: url('https://www.purosviajes.com/wp-content/uploads/2021/03/mavecure.jpg');
+    margin-bottom: 3%;
+    border-radius: 4%;
 }
