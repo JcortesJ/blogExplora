@@ -28,7 +28,8 @@ COMENTARIOS GENERALES:
 
 - Hace falta pensar una versión responsive en la que el titulo no tenga espacios en blanco
 + solucionado problema del titulo poniendo un padding en cajaLogoTitulo
-- hace falta arreglar las transiciones
++ solucionado falta arreglar las transiciones
+- falta arreglar lo del mapa interactivo. Que no se corran los puntos
 */
 
 .Titulopagina {
@@ -159,17 +160,22 @@ a:hover {
     color: #2dbee2f3;
 }
 
-.mapaInirida {
-    display: flex;
-    flex-direction: column;
+.MapaInirida {
+    position: relative;
+    /*Establece el borde de la sección como punteado*/
+    padding: 1%;
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
     width: 80%;
-    height: 60%;
-    background-color: chartreuse;
+    height: fit-content;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .mapaInteractivoIn {
     width: 90%;
     display: block;
+    position: relative;
     margin: auto;
 }
 
@@ -182,7 +188,7 @@ a:hover {
     height: fit-content;
     /*La altura se ajusta según el tamaño del contenido*/
     width: 30%;
-    top: 350%;
+    top: 40%;
     left: 8%;
     border-radius: 4%;
     background-color: #103955;
@@ -245,4 +251,41 @@ a:hover {
     margin: auto;
     display: block;
     border-radius: 5px;
+}
+
+#montanias {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    height: 10%;
+    width: 6%;
+    left: 42%;
+    bottom: 40%;
+}
+
+#mavicure {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    width: 6%;
+    left: 45%;
+    bottom: 40%;
+}
+
+#coco {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    width: 6%;
+    left: 60%;
+    bottom: 40%;
+}
+
+#inirida {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    width: 6%;
+    left: 60%;
+    bottom: 40%;
 }
