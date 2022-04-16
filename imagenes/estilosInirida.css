@@ -181,8 +181,10 @@ a:hover {
 
 #dialogo {
     /*Por defecto, no debería mostrarse el mapa*/
-    display: block;
+    display: none;
     border: black;
+    color: #F2EBC9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 5;
     position: absolute;
     height: fit-content;
@@ -256,10 +258,10 @@ a:hover {
 #montanias {
     z-index: 2;
     position: absolute;
-    top: 30%;
+    top: 82%;
     height: 10%;
     width: 6%;
-    left: 42%;
+    left: 40%;
     bottom: 40%;
 }
 
@@ -267,6 +269,7 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
+    top: 30%;
     width: 6%;
     left: 45%;
     bottom: 40%;
@@ -276,8 +279,9 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
+    top: 12%;
     width: 6%;
-    left: 60%;
+    left: 42%;
     bottom: 40%;
 }
 
@@ -285,7 +289,8 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
+    top: 14%;
     width: 6%;
-    left: 60%;
+    left: 48%;
     bottom: 40%;
 }
