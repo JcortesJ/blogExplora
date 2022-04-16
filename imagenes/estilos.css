@@ -27,12 +27,12 @@ COMENTARIOS GENERALES:
     align-items: center;
     box-sizing: border-box;
     height: fit-content;
-    border: 3px solid black;
+    border: 3px solid #103955;
     margin-bottom: 5%;
 }
 
 .itemTitulo {
-    font-family: 'Saira Condensed';
+    font-family: 'Saira Condensed', sans-serif;
     display: flex;
     align-items: center;
     width: 55%;
@@ -50,7 +50,7 @@ COMENTARIOS GENERALES:
 .cajaLogoTitulo {
     display: flex;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #F2EBC9;
     width: 50%;
     padding: 2%;
     height: 30%;
@@ -64,9 +64,21 @@ COMENTARIOS GENERALES:
     margin: auto;
     width: 70%;
     padding: 1%;
-    background-color: blue;
+    background-color: #F2EBC9;
     font-size: larger;
     text-align: left;
+    font-family: 'Anybody', cursive;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Anybody', cursive;
 }
 
 .menuNav {
@@ -118,5 +130,6 @@ COMENTARIOS GENERALES:
 }
 
 #ciudad {
+    font-family: 'Saira Condensed', sans-serif;
     font-size: 40px;
 }
