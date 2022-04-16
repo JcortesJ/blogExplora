@@ -7,6 +7,17 @@ body {
     background-position: center;
     background-color: papayawhip;
     background-size: cover;
+    animation-name: transicion1;
+    animation-duration: 4s;
+}
+
+@keyframes transicion1 {
+    from {
+        background-color: cadetblue;
+    }
+    to {
+        background-color: papayawhip;
+    }
 }
 
 
@@ -95,6 +106,7 @@ p {
 }
 
 .botonesNav {
+    margin-top: 1%;
     background-color: brown;
     display: flex;
     align-items: center;
@@ -116,15 +128,11 @@ p {
 }
 
 #flechaIzq:hover {
-    width: 17%;
-    height: 17%;
     background-color: rgb(231, 231, 97);
     border-radius: 10%;
 }
 
 #flechaDe:hover {
-    width: 17%;
-    height: 17%;
     background-color: rgb(231, 231, 97);
     border-radius: 10%;
 }
@@ -132,4 +140,16 @@ p {
 #ciudad {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 40px;
+}
+
+a:link {
+    color: #da4b6a;
+    text-decoration: dotted;
+    /* Esta etiqueda hace que los titulos no salgan subrayados azules sino
+	como tu quieras, en este caso rosaditos*/
+}
+
+a:hover {
+    /* indica el estilo cuando el cursor está sobre el elemento */
+    color: #2dbee2f3;
 }

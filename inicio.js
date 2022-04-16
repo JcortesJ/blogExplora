@@ -12,6 +12,7 @@ function irIzquierda() {
 
 
 
+
     } else if (textoReemplazar.innerText == cay) {
         document.body.style.backgroundImage = "url('https://viajes.nationalgeographic.com.es/medio/2021/07/29/baobabs_dc88eef4_1254x836.jpg')";
         textoReemplazar.innerHTML = mad;
@@ -38,5 +39,19 @@ function irDerecha() {
         textoReemplazar.innerHTML = ini;
     } else {
         alert("?");
+    }
+}
+
+function navegarPagina() {
+    if (document.getElementById("ciudad").innerText == "Cayenne") {
+        window.open('./cayena.html', '_self');
+    }
+
+    if (document.getElementById("ciudad").innerText == ini) {
+        window.open('./inirida.html', '_self');
+    }
+
+    if (document.getElementById("ciudad").innerText == mad) {
+        window.open('./madagascar.html', '_self');
     }
 }

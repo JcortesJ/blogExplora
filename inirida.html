@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inirida</title>
+    <link rel="stylesheet" href="./imagenes/estilosInirida.css" type="text/css">
+
+</head>
+
+<body>
+
+    <section class="imagenFondo">
+        <nav class="Titulopagina">
+            <div class="cajaLogoTitulo">
+                <img class="logoTitulo" src="./imagenes/Agence de voyages-01.png" onclick="volverInicio()">
+            </div>
+            <p class="itemTitulo"> Inirida, Guainía </p>
+
+        </nav>
+    </section>
+    <article class="contenedorPrincipal">
+        <h1>Descripción del Lugar</h1>
+        <p> Texto, texto y mas texto</p>
+        <br>
+        <h2>Tenue pour Inirida</h2>
+        <img src="./mapaInirida/foticoRopas.png" class="imagenesMedias" alt="Foto de la ropa">
+        <br>
+        <h2>Nourriture typique</h2>
+        <ul>
+            <li>
+                Ajicero = Poisson avec beaucoup piment, accompagné de yucca
+            </li>
+            <li>
+                Pescado moqueado = Poisson enveloppé dans de feuilles de bananier.
+            </li>
+            <li>
+                Mingado = Boisson de mañoco avec de l' eau.
+            </li>
+            <li>
+                Casabe = Pain provenant de la yucca sauvage (yuca brava)
+            </li>
+        </ul>
+        <img src="./mapaInirida/foticoComida.png" alt="fotoComidas" class="imagenesMedias">
+        <br>
+        <h2>La météo</h2>
+        <p>texto texto y mas texto</p>
+        <br>
+        <h2>Itinéraire et Carte </h2>
+        <p>Vous pouvez suivre notre Indications pour profiter au maximum Inirida</p>
+        <div class="MapaInirida">
+            <img src="./mapaInirida/mapaInirida.svg" alt="MapaInterativo" class="mapaInteractivoIn">
+            <article id="dialogo">
+                <article class="informacion_mostrar">
+                    <h4 id="titulo_informacion"> </h4>
+                    <p id="cuerpo_informacion">
+
+                    </p>
+                    <img id="imagen_mostrar1">
+                    <br>
+                    <img id="imagen_mostrar2">
+                    <br>
+                    <video id="video_mostrar" autoplay muted loop></video>
+                    <br>
+                </article>
+
+
+        </div>
+        </article>
+
+
+        <script src="./mapa1.js" type="text/javascript"></script>
+</body>
+
+</html>
