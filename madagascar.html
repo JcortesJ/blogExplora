@@ -5,11 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antananarivo</title>
+    <title>Madagascar</title>
+    <link rel="stylesheet" href="./imagenes/estillosMad.css" type="text/css">
+
 </head>
 
 <body>
 
+    <section class="imagenFondo">
+        <nav class="Titulopagina">
+            <div class="cajaLogoTitulo">
+                <img class="logoTitulo" src="./imagenes/Agence de voyages-01.png" onclick="volverInicio()">
+            </div>
+            <p class="itemTitulo"> Antananarivo, Madagascar </p>
+
+        </nav>
+    </section>
+    <article class="contenedorPrincipal">
+        <h1>Description
+
+        </h1>
+        <p>Antananarivo est la capitale de la République de Madagascar, le centre administratif et économique de la nation, qui possède le plus grand volume démographique du pays avec une population d'environ deux millions d'habitants. En termes de communication,
+            c'est un avantage pour les touristes qu'en plus de la langue malgache, le français soit parlé.
+        </p>
+        <br>
+        <h2>Tenue pour Antananarivo </h2>
+        <img src="./mapaInirida/foticoRopas.png" class="imagenesMedias" alt="Foto de la ropa">
+        <br>
+        <h2>Nourriture typique</h2>
+        <ul>
+            <li>
+                Ajicero = Poisson avec beaucoup piment, accompagné de yucca
+            </li>
+            <li>
+                Pescado moqueado = Poisson enveloppé dans de feuilles de bananier.
+            </li>
+            <li>
+                Mingado = Boisson de mañoco avec de l' eau.
+            </li>
+            <li>
+                Casabe = Pain provenant de la yucca sauvage (yuca brava)
+            </li>
+        </ul>
+        <img src="./mapaInirida/foticoComida.png" alt="fotoComidas" class="imagenesMedias">
+        <p class="creditos">
+            courtoisie Mateo</p>
+        <br>
+        <h2>La météo</h2>
+        <img src="./mapaInirida/clima inirida.png" class="imagenesMedias" alt="clima de inirida">
+        <p class="creditos">
+            courtoisie Weather.Com</p>
+        <p> Le climat est généralement chaud, bien qu'il varie selon la période de l'année, les périodes les plus chaudes étant de janvier à mai et d'octobre à décembre, où les températures montent à 35°C et descendent à 6°C ; la saison fraîche va de juin
+            à septembre, où les températures peuvent atteindre un maximum de 33°C et un minimum de 1°C.
+        </p>
+        <br>
+        <h2>Itinéraire et Carte </h2>
+        <p>Antananarivo est une belle ville avec un fort héritage français qui se reflète non seulement dans la langue, mais aussi dans les coutumes et l'architecture, entre autres choses, étant donné son indépendance relativement récente de l'Europe. Certains
+            des lieux les plus réputés à visiter sont :</p>
+        <ol>
+            <li>Dans notre minibus et plus tard dans la paquebot ou kayak, naviguer pour le fleuve inirida, et pour le fleuve atabapo, et finalement traverse le fleuve orinoco, nager là c'est beau. </li>
+        </ol>
+
+    </article>
+    <article class="MapaInirida">
+
+        <img src="./mapaInirida/iconoMapa.png" alt="icono" id="montanias" onclick="mostrarMontanias()">
+        <img src="./mapaInirida/iconoMapa.png" alt="icono" id="mavicure" onclick="mostrarMavicure()">
+        <img src="./mapaInirida/iconoMapa.png" alt="icono" id="coco" onclick="mostrarCoco()">
+        <img src="./mapaInirida/iconoMapa.png" alt="icono" id="inirida" onclick="mostrarInirida()">
+        <img src="./mapaInirida/mapaInirida.svg" alt="MapaInterativo" class="mapaInteractivoIn">
+
+        <article id="dialogo">
+            <article class="informacion_mostrar">
+                <h4 id="titulo_informacion"> </h4>
+                <p id="cuerpo_informacion">
+
+                </p>
+                <img id="imagen_mostrar1">
+                <br>
+                <img id="imagen_mostrar2">
+                <br>
+                <video id="video_mostrar" autoplay muted loop></video>
+                <br>
+            </article>
+
+
+        </article>
+
+    </article>
+    <p class="creditos">Courtoisie Open Street Map</p>
+
+
+    <script src="./mapa2.js" type="text/javascript"></script>
 </body>
 
 </html>
