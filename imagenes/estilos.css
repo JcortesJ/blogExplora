@@ -77,8 +77,8 @@ COMENTARIOS GENERALES:
     padding: 1%;
     background-color: #F2EBC9;
     font-size: larger;
-    text-align: left;
-    font-family: 'Anybody', cursive;
+    text-align: justify;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 h1,
@@ -89,7 +89,7 @@ h4 {
 }
 
 p {
-    font-family: 'Anybody', cursive;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 .menuNav {

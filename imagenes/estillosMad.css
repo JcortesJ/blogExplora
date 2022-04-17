@@ -2,13 +2,13 @@
 @import url('https://fonts.google.com/specimen/Anybody?query=ANY');
 body {
     /* font-family: 'Anybody', 'Saira Condensed', sans-serif;*/
-    background-color: papayawhip;
+    background-color: rgb(173, 191, 116);
 }
 
 .imagenFondo {
-    background-image: url('../mapaInirida/fondoInirida.jpeg');
+    background-image: url('../mapaMad/miquitosFondo.jpeg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-color: papayawhip;
     background-size: cover;
     margin: auto;
@@ -16,10 +16,39 @@ body {
     width: 80%;
 }
 
+.muestraInicial {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenesPequeniasFlex {
+    width: 20%;
+    height: 40%;
+    margin: auto;
+    align-self: flex-end;
+    margin-right: 2%;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
+}
+
+.textoColumna {
+    text-align: justify;
+}
+
 .imagenesMedias {
     width: 70%;
     height: 150%;
     margin: auto;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
+}
+
+.imagenesPequenias {
+    width: 20%;
+    height: 40%;
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
 }
 
 
@@ -41,14 +70,16 @@ COMENTARIOS GENERALES:
     justify-content: right;
     align-items: center;
     box-sizing: border-box;
+    /*esto de arriba sirve para que las margenes de los elementos no se colapsen entre si*/
     height: fit-content;
     border: 3px solid #103955;
     margin-bottom: 5%;
+    background-color: rgba(233, 230, 230, 0.877);
 }
 
 .itemTitulo {
     font-family: 'Saira Condensed', sans-serif;
-    color: #F2EBC9;
+    color: #103955;
     display: flex;
     align-items: center;
     width: 55%;
@@ -66,7 +97,6 @@ COMENTARIOS GENERALES:
 .cajaLogoTitulo {
     display: flex;
     align-items: center;
-    background-color: rgba(233, 230, 230, 0.877);
     width: 50%;
     padding: 11%;
     height: 30%;
@@ -82,7 +112,7 @@ COMENTARIOS GENERALES:
     padding: 2%;
     font-size: larger;
     text-align: left;
-    font-family: 'Anybody', cursive;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 h1,
@@ -95,7 +125,7 @@ h4 {
 p,
 li,
 ul {
-    font-family: 'Anybody', cursive;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 .menuNav {
@@ -160,7 +190,7 @@ a:hover {
     color: #2dbee2f3;
 }
 
-.MapaInirida {
+.MapaMad {
     position: relative;
     /*Establece el borde de la sección como punteado*/
     padding: 1%;
@@ -172,7 +202,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.mapaInteractivoIn {
+.mapaInteractivoM {
     width: 90%;
     display: block;
     position: relative;
@@ -232,7 +262,7 @@ a:hover {
 }
 
 #cuerpo_informacion {
-    text-align: justify;
+    text-align: left;
     font-size: 80%;
     padding: 2%;
 }
@@ -261,42 +291,42 @@ a:hover {
     border-radius: 5px;
 }
 
-#montanias {
+#lemures {
     z-index: 2;
     position: absolute;
     top: 82%;
     height: 10%;
-    width: 6%;
+    width: 7%;
     left: 40%;
     bottom: 40%;
 }
 
-#mavicure {
+#cafe {
     z-index: 2;
     position: absolute;
     height: 10%;
     top: 30%;
-    width: 6%;
+    width: 7%;
     left: 45%;
     bottom: 40%;
 }
 
-#coco {
+#palacio {
     z-index: 2;
     position: absolute;
     height: 10%;
     top: 12%;
-    width: 6%;
+    width: 7%;
     left: 42%;
     bottom: 40%;
 }
 
-#inirida {
+#aeropuerto {
     z-index: 2;
     position: absolute;
     height: 10%;
     top: 14%;
-    width: 6%;
+    width: 7%;
     left: 48%;
     bottom: 40%;
 }

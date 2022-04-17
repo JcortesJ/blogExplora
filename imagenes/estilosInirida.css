@@ -20,6 +20,9 @@ body {
     width: 70%;
     height: 150%;
     margin: auto;
+    /*hace que se vean mas bonitas las imagenes*/
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
 }
 
 
@@ -81,8 +84,8 @@ COMENTARIOS GENERALES:
     margin-top: 2%;
     padding: 2%;
     font-size: larger;
-    text-align: left;
-    font-family: 'Anybody', cursive;
+    text-align: justify;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 h1,
@@ -95,7 +98,7 @@ h4 {
 p,
 li,
 ul {
-    font-family: 'Anybody', cursive;
+    font-family: 'Saira Condensed', sans-serif;
 }
 
 .menuNav {
@@ -177,6 +180,8 @@ a:hover {
     display: block;
     position: relative;
     margin: auto;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
 }
 
 #dialogo {
@@ -232,7 +237,7 @@ a:hover {
 }
 
 #cuerpo_informacion {
-    text-align: justify;
+    text-align: left;
     font-size: 80%;
     padding: 2%;
 }
