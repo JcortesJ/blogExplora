@@ -1,6 +1,6 @@
 const ini = "Inirida";
 const cay = "Cayenne";
-const mad = "Madagascar";
+const mad = "Antananarivo";
 let textoReemplazar = document.getElementById("ciudad");
 
 function irIzquierda() {

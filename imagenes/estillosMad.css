@@ -297,7 +297,7 @@ a:hover {
     top: 82%;
     height: 10%;
     width: 7%;
-    left: 40%;
+    left: 10%;
     bottom: 40%;
 }
 
@@ -305,9 +305,9 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 30%;
+    top: 65%;
     width: 7%;
-    left: 45%;
+    left: 65%;
     bottom: 40%;
 }
 
@@ -315,9 +315,9 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 12%;
+    top: 75%;
     width: 7%;
-    left: 42%;
+    left: 65%;
     bottom: 40%;
 }
 
@@ -325,8 +325,8 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 14%;
+    top: 3%;
     width: 7%;
-    left: 48%;
+    left: 43%;
     bottom: 40%;
 }
