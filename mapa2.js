@@ -17,8 +17,8 @@ function mostrarLemures() {
     espacio_video.style.display = "none";
 
     //Movemos el dialogo un poco para arriba
-    espacio_dialogo.style.top = "20%";
-    espacio_dialogo.style.left = "18%";
+    espacio_dialogo.style.top = "5%";
+    espacio_dialogo.style.left = "58%";
 
 
     //verificamos si esta visible o no nuestra pantalla de dialogo
@@ -90,8 +90,8 @@ function mostrarPalacio() {
     espacio_video.style.display = "none";
 
     //Movemos el dialogo un poco para la izquierda y arriba
-    espacio_dialogo.style.left = "25%";
-    espacio_dialogo.style.top = "25%";
+    espacio_dialogo.style.left = "60%";
+    espacio_dialogo.style.top = "10%";
 
     //declaramos y ponemos datos
     const titulo = " Le palais de la Reine.";

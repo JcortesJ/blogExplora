@@ -294,10 +294,10 @@ a:hover {
 #lemures {
     z-index: 2;
     position: absolute;
-    top: 82%;
+    top: 72%;
     height: 10%;
     width: 7%;
-    left: 10%;
+    left: 15%;
     bottom: 40%;
 }
 
@@ -305,9 +305,9 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 65%;
+    top: 53%;
     width: 7%;
-    left: 65%;
+    left: 50%;
     bottom: 40%;
 }
 
@@ -315,9 +315,9 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 75%;
+    top: 62%;
     width: 7%;
-    left: 65%;
+    left: 51%;
     bottom: 40%;
 }
 
@@ -325,8 +325,8 @@ a:hover {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 3%;
+    top: 6%;
     width: 7%;
-    left: 43%;
+    left: 40%;
     bottom: 40%;
 }
