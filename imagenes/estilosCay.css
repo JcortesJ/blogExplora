@@ -44,8 +44,8 @@ body {
 }
 
 .imagenesPequenias {
-    width: 40%;
-    height: 60%;
+    width: 20%;
+    height: 40%;
     margin: auto;
     border-radius: 1%;
     box-shadow: 0.5px 0.5px 1px 1px #103955;
@@ -190,7 +190,7 @@ a:hover {
     color: #2dbee2f3;
 }
 
-.MapaMad {
+.MapaCay {
     position: relative;
     /*Establece el borde de la sección como punteado*/
     padding: 1%;
@@ -202,7 +202,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.mapaInteractivoM {
+.mapaInteractivoC {
     width: 90%;
     display: block;
     position: relative;
@@ -220,8 +220,8 @@ a:hover {
     height: fit-content;
     /*La altura se ajusta según el tamaño del contenido*/
     width: 30%;
-    top: 40%;
-    left: 8%;
+    top: 5%;
+    left: 10%;
     border-radius: 4%;
     background-color: #103955;
     /*Ejecutamos la animacion por 1s*/
@@ -291,42 +291,32 @@ a:hover {
     border-radius: 5px;
 }
 
-#lemures {
+#pueblos {
     z-index: 2;
     position: absolute;
-    top: 72%;
+    top: 65%;
     height: 10%;
     width: 7%;
-    left: 15%;
+    left: 45%;
     bottom: 40%;
 }
 
-#cafe {
+#playa {
     z-index: 2;
     position: absolute;
     height: 10%;
-    top: 53%;
+    top: 55%;
     width: 7%;
-    left: 50%;
+    left: 82%;
     bottom: 40%;
 }
 
-#palacio {
-    z-index: 2;
-    position: absolute;
-    height: 10%;
-    top: 62%;
-    width: 7%;
-    left: 51%;
-    bottom: 40%;
-}
-
-#aeropuerto {
+#museo {
     z-index: 2;
     position: absolute;
     height: 10%;
     top: 6%;
     width: 7%;
-    left: 40%;
+    left: 50%;
     bottom: 40%;
 }
