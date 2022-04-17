@@ -1,0 +1,332 @@
+@import url('https://fonts.google.com/specimen/Saira+Condensed');
+@import url('https://fonts.google.com/specimen/Anybody?query=ANY');
+body {
+    /* font-family: 'Anybody', 'Saira Condensed', sans-serif;*/
+    background-color: rgb(178, 239, 232);
+}
+
+.imagenFondo {
+    background-image: url('../mapaCay/fondoCay.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: papayawhip;
+    background-size: cover;
+    margin: auto;
+    padding: 8%;
+    width: 80%;
+}
+
+.muestraInicial {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagenesPequeniasFlex {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    align-self: flex-start;
+    margin-right: 2%;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
+}
+
+.textoColumna {
+    text-align: justify;
+}
+
+.imagenesMedias {
+    width: 70%;
+    height: 150%;
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
+}
+
+.imagenesPequenias {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    border-radius: 1%;
+    box-shadow: 0.5px 0.5px 1px 1px #103955;
+}
+
+
+/*
+COMENTARIOS GENERALES:
+
+- Hace falta pensar una versión responsive en la que el titulo no tenga espacios en blanco
++ solucionado problema del titulo poniendo un padding en cajaLogoTitulo
++ solucionado falta arreglar las transiciones
+- falta arreglar lo del mapa interactivo. Que no se corran los puntos
+*/
+
+.Titulopagina {
+    margin-top: 20%;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    /*Colores pendientes de cambiar*/
+    justify-content: right;
+    align-items: center;
+    box-sizing: border-box;
+    /*esto de arriba sirve para que las margenes de los elementos no se colapsen entre si*/
+    height: fit-content;
+    border: 3px solid #103955;
+    margin-bottom: 5%;
+    background-color: rgba(233, 230, 230, 0.877);
+}
+
+.itemTitulo {
+    font-family: 'Saira Condensed', sans-serif;
+    color: #103955;
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 40%;
+    font-size: 215%;
+    padding: 3%;
+}
+
+.logoTitulo {
+    margin: auto;
+    width: 70%;
+    height: 40%;
+}
+
+.cajaLogoTitulo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 11%;
+    height: 30%;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    height: fit-content;
+    margin-top: 2%;
+    padding: 2%;
+    font-size: larger;
+    text-align: left;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+p,
+li,
+ul {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.menuNav {
+    margin: auto;
+    padding-top: 5%;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(233, 230, 230, 0.877);
+    flex-direction: column;
+    border: solid gray 2px;
+    margin-bottom: 3%;
+}
+
+.botonesNav {
+    margin-top: 1%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flechaIzq {
+    width: 15%;
+    margin-right: 5%;
+    height: 15%;
+    transform: rotate(90deg);
+}
+
+#flechaDe {
+    width: 15%;
+    height: 15%;
+    /*margin-left: 5%;*/
+    transform: rotate(-90deg);
+}
+
+#flechaIzq:hover {
+    background-color: rgb(231, 231, 97);
+    border-radius: 10%;
+}
+
+#flechaDe:hover {
+    background-color: rgb(231, 231, 97);
+    border-radius: 10%;
+}
+
+#ciudad {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+}
+
+a:link {
+    color: #da4b6a;
+    text-decoration: dotted;
+    /* Esta etiqueda hace que los titulos no salgan subrayados azules sino
+	como tu quieras, en este caso rosaditos*/
+}
+
+a:hover {
+    /* indica el estilo cuando el cursor está sobre el elemento */
+    color: #2dbee2f3;
+}
+
+.MapaMad {
+    position: relative;
+    /*Establece el borde de la sección como punteado*/
+    padding: 1%;
+    margin: auto;
+    /* Centra la sección hacia el centro de la pagina*/
+    width: 80%;
+    height: fit-content;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.mapaInteractivoM {
+    width: 90%;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+#dialogo {
+    /*Por defecto, no debería mostrarse el mapa*/
+    display: none;
+    border: black;
+    color: #F2EBC9;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 5;
+    position: absolute;
+    height: fit-content;
+    /*La altura se ajusta según el tamaño del contenido*/
+    width: 30%;
+    top: 40%;
+    left: 8%;
+    border-radius: 4%;
+    background-color: #103955;
+    /*Ejecutamos la animacion por 1s*/
+    animation: moverseLateral;
+    animation-duration: 1.5s;
+    /*Le añade un efecto de sombra a la caja*/
+    box-shadow: 0.5px 0.5px 1px 1px black;
+}
+
+.creditos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/*Esta animacion consiste en un desde a un hasta para la ventana emergente*/
+
+@keyframes moverseLateral {
+    from {
+        /*pone color naranja e inicia desde -x*/
+        transform: translateX(-10%);
+        background-color: #F2EBC9
+    }
+    to {
+        /*pone color amarillito y acaba en x*/
+        transform: translateX(5%);
+        background-color: #103955;
+    }
+}
+
+
+/* Espacios para mostrar imagenes, texto y videos*/
+
+#titulo_informacion {
+    text-align: center;
+    font-size: small;
+}
+
+#cuerpo_informacion {
+    text-align: left;
+    font-size: 80%;
+    padding: 2%;
+}
+
+#imagen_mostrar1 {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#imagen_mostrar2 {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#video_mostrar {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#lemures {
+    z-index: 2;
+    position: absolute;
+    top: 72%;
+    height: 10%;
+    width: 7%;
+    left: 15%;
+    bottom: 40%;
+}
+
+#cafe {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    top: 53%;
+    width: 7%;
+    left: 50%;
+    bottom: 40%;
+}
+
+#palacio {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    top: 62%;
+    width: 7%;
+    left: 51%;
+    bottom: 40%;
+}
+
+#aeropuerto {
+    z-index: 2;
+    position: absolute;
+    height: 10%;
+    top: 6%;
+    width: 7%;
+    left: 40%;
+    bottom: 40%;
+}

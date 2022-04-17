@@ -5,11 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cayena</title>
+    <title>Cayenne</title>
+    <link rel="stylesheet" href="./imagenes/estilosCay.css" type="text/css">
+
 </head>
 
 <body>
 
+    <section class="imagenFondo">
+        <nav class="Titulopagina">
+            <div class="cajaLogoTitulo">
+                <img class="logoTitulo" src="./imagenes/Agence de voyages-01.png" onclick="volverInicio()">
+            </div>
+            <p class="itemTitulo"> Cayenne,Guyane française </p>
+
+        </nav>
+    </section>
+    <article class="contenedorPrincipal">
+        <h1>Description
+        </h1>
+        <section class="muestraInicial">
+
+            <img src="./mapaCay/playita.jpeg" alt="maquillaje" class="imagenesPequeniasFlex">
+            <p class="textoColumna">Cayenne est une fantastique destination pour visiter dans la Guyane Française. Il est la capitale du pays, et dans cette ville il y a plus d' activités ​à faire. Vous pouvez rencontrer des activités pour tous les goûts, puis faire des ateliers
+                avec la communauté á faire activités extrêmes. Les temps en Cayenne sont parfaits parce qu' il y a plus du soleil et la brise de mer est toujours fraîche.
+
+            </p>
+
+        </section>
+        <br>
+        <h2>La météo</h2>
+        <img src="./mapaCay/climaCay.png" class="imagenesMedias" alt="clima de cayena">
+        <p class="creditos">
+            courtoisie Weather.Com</p>
+        <p> Le climat est généralement chaud, bien qu'il varie selon la période de l'année, les périodes les plus chaudes étant de janvier à mai et d'octobre à décembre, où les températures montent à 35°C et descendent à 6°C ; la saison fraîche va de juin
+            à septembre, où les températures peuvent atteindre un maximum de 33°C et un minimum de 1°C.
+        </p>
+
+        <br>
+        <h2>Itinéraire et Carte </h2>
+        <p>Vous n'avez pas à vous inquiéter, parce que il y a beaucoup d' activités à faire dans la Ville.
+
+        </p>
+        <img src="./mapaCay/actividadesXhistoso.gif" alt="gif chistoso" class="imagenesPequenias">
+        <p class="creditos">
+            Oui, nous connaissons que vous voulez s'amuser ici</p>
+
+    </article>
+    <article class="MapaMad">
+        <!--Esta es la sección de afuerita xd. No el mapa como tal-->
+        <img src="./mapaMad/iconito.png" alt="icono" id="lemures" onclick="mostrarLemures()">
+        <img src="./mapaMad/iconito.png" alt="icono" id="cafe" onclick="mostrarCafe()">
+        <img src="./mapaMad/iconito.png" alt="icono" id="palacio" onclick="mostrarPalacio()">
+        <img src="./imagenes/iconoInicio.png" alt="icono" id="aeropuerto" onclick="mostrarAero()">
+        <img src="./mapaMad/mapaMad2.svg" alt="MapaInterativo" class="mapaInteractivoM">
+
+        <article id="dialogo">
+            <article class="informacion_mostrar">
+                <h4 id="titulo_informacion"> </h4>
+                <p id="cuerpo_informacion">
+
+                </p>
+                <img id="imagen_mostrar1">
+                <br>
+                <img id="imagen_mostrar2">
+                <br>
+                <video id="video_mostrar" autoplay muted loop></video>
+                <br>
+            </article>
+
+
+        </article>
+
+    </article>
+    <p class="creditos">Courtoisie Open Street Map</p>
+
+    <article class="contenedorPrincipal">
+        <h2>Prix:</h2>
+        <article class="muestraInicial">
+            <img src="mapaCay/ciudad.jpeg" alt="ciudad" class="imagenesPequeniasFlex">
+
+            <ul>
+                <li>Club de traversée offre deux tours pour les trois lieux les plus emblématiques de la ville. Tous pour la modeste somme de €492. </li>
+                <li>Dans le premier tour, nous proposons une visite au musée des cultures guyanaises, après, le village de Matoury et après la plage dans Remire-Montjoly avec une guide touristique et déjeuner dans le lieu. Tous les deux jours.</li>
+                <li>Dans le deuxième tour, nous proposons une visite à trois lieux sans guide touristique mais avec une carte complète et une visite gratuite au spa près de la plage.</li>
+            </ul>
+        </article>
+        <h2>Recommandations:</h2>
+        <ul>
+            <li>N'oubliez pas votre parapluie parce que les temps sont pluvieux.</li>
+            <li>Si vous ne parlez français, vous ne vous inquiétez pas, parce que nos services sont en anglais et en français. Mais c’est très important de connaître un peu de mots en français parce que tous les gens en Cayenne parlent français.
+            </li>
+        </ul>
+    </article>
+
+
+    <script src="./mapa2.js" type="text/javascript"></script>
 </body>
 
 </html>
